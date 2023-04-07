@@ -12,6 +12,8 @@ How To Run The Code:
 1. Run `nodemon calculator.js`
 2. Open `localhost:3000` in your browser to the app in action!
 
+*Application is also hosted on [Render](https://calculator101.onrender.com)*
+*Give a Try!*
 
 Thank You!
 -----------
