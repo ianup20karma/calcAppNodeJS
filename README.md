@@ -13,7 +13,8 @@ How To Run The Code:
 2. Open `localhost:3000` in your browser to the app in action!
 
 *Application is also hosted on [Render](https://calculator101.onrender.com)*
-*Give a Try!*
+
+*Give it a Try!*
 
 Thank You!
 -----------
