@@ -15,7 +15,6 @@ app.post('/', (req, res) => {
     if (typeof parseFloat(req.body.num1) != 'number' || typeof parseFloat(req.body.num1) != 'number' || !operators.includes(req.body.operator)) {
         result = 'Error! Please Check the inputs again!';
     } else {
-        console.log(req.body);
         switch (req.body.operator) {
             case 'add':
                 result = `Your Calculated value is: ${+req.body.num1 + +req.body.num2}`;
