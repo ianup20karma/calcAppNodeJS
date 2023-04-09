@@ -6,7 +6,7 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
 app.set('view engine', 'ejs');
-const operators = ['add', 'subtract', 'multiply', 'divide']
+const operators = ['add', 'subtract', 'multiply', 'divide'];
 
 app.get('/', (req, res) => res.render('index.ejs', { operators: operators }));
 app.post('/', (req, res) => {
