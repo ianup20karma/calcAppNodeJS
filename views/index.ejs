@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('header') %>
+    <body class="text-center">
+        <main class="form-calc w-100 m-auto">
+            <form action="/" method="post">
+                <img class="mb-4" src="images/calc.png" alt="" width="200" height="200">
+
+                <h1 class="mb-3 fw-bold">Calculator 101</h1>
+                <h5 style="margin-top: 30px; margin-bottom: 30px;">Please enter valid inputs to proceed.</h5>
+
+                <div class="form-floating">
+                    <input type="text" name="num1" class="form-control" id="num1" placeholder="First Number" pattern="^[0-9]{0,4}(?:[.][0-9]{0,4})?$">
+                    <label for="num1">First Number</label>
+                </div>
+
+                <div style="display: flex; justify-content: space-between; margin-top: 20px; margin-bottom: 20px;">
+                    <% operators.forEach((operator, i) => { %>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="operator" value="<%= operator %>" id="<%= operator %>" checked>
+                            <label class="form-check-label" for="<%= operator %>"><%= operator[0].toUpperCase() + operator.slice(1) %></label>
+                        </div>
+                    <% }) %>
+                </div>
+
+                <div class="form-floating">
+                    <input type="text" name="num2" class="form-control" id="num2" placeholder="Second Number" pattern="^[0-9]{0,4}(?:[.][0-9]{0,4})?$">
+                    <label for="num2">Second Number</label>
+                </div>
+
+                <button class="w-100 btn btn-lg btn-success" type="submit" style="margin-top: 50px;">Calculate</button>
+
+                <p class="mt-5 mb-3 text-body-secondary">© Anup Vishwakarma - 2023</p>
+            </form>
+        </main>
+    </body>
+</html>
